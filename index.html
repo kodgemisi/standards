@@ -1,7 +1,15 @@
 ---
-title: Web and design practices
-description: A collection of documents that describe best practices for Canonical Web and design team
+title: Software development standards
+description: A collection of documents that describe standards and conventions for technical Kod Gemisi crew
 ---
+
+<p style="font-size: 1.5rem;">
+  Note that <strong>nothing is optional in this document/site</strong> for Kod Gemisi crew unless explicitly stated otherwise.
+</p>
+
+<p>Statements like "preferably", "if you like" indicates optionality. However, "if applicable" or "if possible" don't infer optionality.</p>
+
+<p>This version ({{site.document-version}}) is in effect since {{site.document-version-in-use-since}}.
 
 {% comment %}Get top-level categories{% endcomment %}
 {% assign categories = "" | split: ',' %}
@@ -25,7 +33,7 @@ description: A collection of documents that describe best practices for Canonica
       {% assign url_parts = node.url | split: '/' %}
       {% if url_parts[1] == category %}
         {% unless node.redirect.to %}
-          <li><a href="/practices{{ node.url }}">{{ node.title }}</a>: {{ node.description }}</li>
+          <li><a href="{{ node.url }}">{{ node.title }}</a>: {{ node.description }}</li>
         {% endunless %}
       {% endif %}
     {% endfor %}

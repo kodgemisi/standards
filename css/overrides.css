@@ -1,0 +1,53 @@
+.p-sidebar-nav__item .is-active::before {
+    background-color: #348488;
+}
+
+a {
+  color: #348488;
+}
+a:visited {
+  color: #348488;
+}
+
+/*Automatically show outgoing arrow for links that opens in new window.*/
+a[target="_blank"]::after {
+    -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' %3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M-1-1h16v16H-1'/%3E%3Cpath fill='%23111' d='M4.867 1.313C.6 1.32.067 1.443.067 4.51v6.4c0 3.2.533 3.2 5.333 3.2h2.133c4.8 0 5.334 0 5.334-3.2v-1.6h-1.6v1.068c0 2.133 0 2.133-4.267 2.133H5.933c-4.266 0-4.266 0-4.266-2.132V5.044c0-1.93.034-2.112 3.2-2.13v-1.6z'/%3E%3Cpath d='M-1-1h16v16H-1'/%3E%3Cpath fill='%23111' d='M6.435 2.16c.11-.446 7.113-2.196 7.448-1.86.335.334-1.416 7.335-1.863 7.447-.447.112-5.697-5.14-5.586-5.586z'/%3E%3Cpath fill='%23111' d='M9.032 3.38L4.705 7.708l1.767 1.767L10.8 5.148'/%3E%3C/g%3E%3C/svg%3E") no-repeat 0 0/cover;
+    background-color: currentColor;
+    content: '';
+    margin: 0 0 0 .25em;
+    mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' %3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M-1-1h16v16H-1'/%3E%3Cpath fill='%23111' d='M4.867 1.313C.6 1.32.067 1.443.067 4.51v6.4c0 3.2.533 3.2 5.333 3.2h2.133c4.8 0 5.334 0 5.334-3.2v-1.6h-1.6v1.068c0 2.133 0 2.133-4.267 2.133H5.933c-4.266 0-4.266 0-4.266-2.132V5.044c0-1.93.034-2.112 3.2-2.13v-1.6z'/%3E%3Cpath d='M-1-1h16v16H-1'/%3E%3Cpath fill='%23111' d='M6.435 2.16c.11-.446 7.113-2.196 7.448-1.86.335.334-1.416 7.335-1.863 7.447-.447.112-5.697-5.14-5.586-5.586z'/%3E%3Cpath fill='%23111' d='M9.032 3.38L4.705 7.708l1.767 1.767L10.8 5.148'/%3E%3C/g%3E%3C/svg%3E") no-repeat 0 0/cover;
+    padding-right: .75em;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+/* Custom style */
+#docs-version {
+	color: #348488;
+	font-size: 1rem;
+}
+
+.at-sign {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cGF0aCBkPSJNMjY4LjI1IDQ3LjEwN2MtNjYuMTc3LS4yNDUtMTM0LjExOCAyOC43MzgtMTcyLjg5NSA4My4zMTNDNTUgMTg2LjM4NiA0NC44MyAyNjAuMjcgNTguMTg4IDMyNy4wMTNjOS4zODMgNDQuNTQ3IDM1LjQzNyA4Ni42NDggNzUuMzI0IDEwOS45MjUgNDUuNDk3IDI3LjUxNCAxMDAuOTczIDMxLjYzMyAxNTIuODI1IDI1LjY5OCAyNi4wMjQtMy4xNTUgNTEuNjQ0LTEwLjEwNyA3NS40NDYtMjAuOTk4di00OS4zNDRjLTUzLjQ5MyAyMi4xOC0xMTQuNjQ4IDMyLjk4Ni0xNzEuNSAxNy4wNjMtMzkuOTQzLTExLjI1OC03Mi40LTQ1LjY4Ny04MS4xOTUtODYuMjQ3LTEwLjQ4OC00MS4yOS03Ljk0LTg1LjY4OCA1LjM1LTEyNS45NyAxNC4yMzQtNDAuMjU3IDQ1LjA5Ny03NS4wODQgODUuNjIyLTg5LjczIDQwLjQzNy0xNS44MyA4Ni45LTE3LjI4IDEyOC4xNi0zLjYxMyAzNi43ODIgMTMuNDkgNjYuNzU2IDQ1LjI0NCA3NS45MzMgODMuMzA1IDkuNTQgMzQuODM2IDguNDQyIDczLjMyMi01LjAzNSAxMDYuODU2LTUuOTQyIDE0LjEzLTE5LjM3IDI4LjU0Mi0zNi4xMTcgMjUuMzA4LTkuMjY2LTEuNDkzLTE2LjUwMi05LjM1LTE3LjQwNi0xOC42MjUtNC45NDMtMjMuMzY1IDEuMTI3LTQ3LjI1LjczNS03MC44NjhsMy44Ni03MS42NjNjLTM3LjcwOC0xMS4yOS03OC40NC0xOC41NTItMTE3LjM0NC05LjQzNy0zOS40IDEwLjc5OC02OS42MDQgNDYuMjQ0LTc2LjE5NyA4Ni40LTUuNzU2IDI5Ljg5Ny0zLjI1NiA2Mi4xOSAxMC41NzIgODkuMzggMTIuNzg2IDIzLjMwOCAzNy41MzUgMzkuOSA2NC4zNyA0MC45MyAyOS42MSAyLjc4IDYxLjE1LTkuNTggNzcuOTcyLTM0LjU4NSAxMC45NTMgMjUgNDAuMjY1IDM5LjIyIDY2LjkwNiAzNC4xNTYgMzEuNzgtNC4zNiA1Ny40MjYtMjkuMjMyIDY4LjYyNS01OC40MDYgMTguNTE1LTQzLjI1MiAxNy42OC05My4wNSA0Ljg0NC0xMzcuNzUtMTUuMzA2LTQ5LjMzNi01My4zOTQtOTEuNTUtMTAyLjU2LTEwOC43My0yNS4xODItOS40NzUtNTIuMjE4LTEzLjQ4NS03OS4xMjgtMTIuOTU3em0tMy4xMjUgMTQzLjQwNmMxMC40NjUtLjAzNCAyMC45NzIuODE3IDMxLjEyNSAzLjAzLTIuOTc0IDM0LjA4NS42NzIgNjkuNzczLTEyLjQzIDEwMi4wNi02LjI3IDEzLjYzNi0xOS45NzYgMjQuMjM3LTM1LjI1OCAyNC4wMzUtMTUuOTk1IDEuNTY4LTMzLjc2My03LjgzMi0zNy41LTI0LjMyNS03LjE0Ny0yMS44ODUtNS4wMzgtNDYuMTA4IDEuNS02Ny44MyA3LjMyNi0xOS45NTYgMjUuOTctMzYuNDk4IDQ3LjkzOC0zNi43MiAxLjUzOC0uMTMzIDMuMDgyLS4yMTggNC42MjUtLjI1eiIgZmlsbD0iIzIyMiIvPjwvc3ZnPg==);
+}
+
+@media print {
+  aside, header, footer, .p-navigation__nav, .u-hide--medium.u-hide--large, .p-navigation__toggle--open, .p-pagination {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li:before {
+    content: "☐ ";
+  }
+}

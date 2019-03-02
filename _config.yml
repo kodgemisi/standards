@@ -1,7 +1,12 @@
-baseurl: /practices
+document-version: v0.1.0
+document-version-in-use-since: 2019-03-15
+baseurl: 
 plugins:
   - jekyll-redirect-from
 defaults:
   -
     values:
       layout: "default"
+
+markdown: kramdown
+highlighter: rouge
